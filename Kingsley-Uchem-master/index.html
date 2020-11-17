@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kingsley Uchem | Your next android developer.</title>
+</head>
+<body>
+    <!--nav-->
+    <div class = "nav">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <img src="http://fasignoms.com/wp-content/themes/twentyseventeen/img/menu_bar.png"alt = "toggle-icon"width="28px"onclick = "toggle()">
+        </span>
+        <div class="logo">
+            <div class = "square-box">
+                <h4 class = "letter-symbol">KU</h4>
+            </div>
+        </div>
+        <div class="nav-link-box" id="js-menu">
+            <ul class="nav-links">
+                <li><a href = "index.html">Home</a></li>
+                <li><a href="index.html#Projects">Projects</a></li>
+                <li><a href="index.html#my-skills">Skills</a></li>
+                <li><a href="index.html#About">About</a></li>
+                <li><a href="index.html#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </div><!--end nav-->
+    <div class = 'jumbotron hero-container'style = "margin:0">
+        <div class = 'intro-box'>
+            <h1 class = "animated fadeIn">Hello, my name is Kingsley Uchem.</h1>
+            <h3 class = "animated bounceInLeft">Your next android developer.</h3>
+            <div class = "logo-box animated zoomIn">
+        <a href = "https://www.linkedin.com/in/kingsley-uchem-7392b0195?trk=public_profile_samename_profile_profile-result-card_result-card_full-click"target="_blank">
+            <img src="Images/linkedin.png" class="logo-hero" title="My Linkedin">
+        </a>
+        <a href = " https://twitter.com/KingsleyU6?lang=en"target="_blank">
+            <img src="Images/twitter.png" class="logo-hero" title="My Twitter">
+        </a>
+        <a href = "https://github.com/JavaCoffeeBean"target="_blank">
+            <img src="Images/github-logo.png" class="logo-hero" title="My Github">
+        </a>
+            </div>
+        </div>
+    </div>
+    <div class = "container">
+        <h3 class = "section-header"id="my-skills">My Skills</h3>
+        <div class = "skill-container">
+            <div class = "skill"><h4>Java/O.O.P</h4></div>
+            <div class="skill"><h4>Android Studio</div>
+            <div class="skill"><h4>Sqlite</div>
+        </div>
+        <div class="skill-container">
+            <div class="skill"><h4>Xml</h4></div>
+            <div class="skill"><h4>Rest API</h4></div>
+        </div>
+    <div class="skill-container">
+        <div class="skill"><h4>Json</h4></div>
+        <div class="skill"><h4>Git/Github</h4></div>
+        <div class="skill"><h4>Volley</h4></div>
+    </div>
+<section class = "project-page"id = "Projects">
+    <h3 class="section-header">My Projects</h3>
+    <div class = 'row'>
+        <div class = "col-md-4">
+            <div class = "img-box">
+                <script>
+                    var i = 0; 			// Start Point
+        var images = [];	// Images Array
+        var time = 3000;	// Time Between Switch
+             
+        // Image List
+        images[0] = "newfit/bmi.png";
+        images[1] = "newfit/profile.png";
+        images[2] = "newfit/creatine.png";
+        images[3] = "newfit/leanMass.png";
+        images[4] = "newfit/macronutrient.png";
+        images[5] = "newfit/bodyFat.png";
+
+        
+        // Change Image
+        function changeImg(){
+            document.slide.src = images[i];
+        
+            // Check If Index Is Under Max
+            if(i < images.length - 1){
+              // Add 1 to Index
+              i++; 
+            } else { 
+                // Reset Back To O
+                i = 0;
+            }
+        
+            // Run function every x seconds
+            setTimeout("changeImgi()", time);
+        }
+        
+        // Run function when page loads
+        window.onload=changeImg;
+                </script>
+                <img name="slide" width="426" height="856" />
+            </div>
+        </div>
+    <div class = "col-md-8">
+    
+        <img src="Images/playre.png">
+        <br>
+        <br>
+        <h4>FitShell</h4>
+            <p class = "app-description">FitShell | Fitness app used to gain/lose weight, formulate diet, and calculate info about body
+            </p>
+        <ul class = "project-points">
+            <li>Utilized a third party library called "Moor" in order to create an sqlite database for the user's profile information </li>
+            <li>Implemented the BLOC design pattern to create a clean and adjustable state management system</li>
+            <li>Built entire application using the Flutter framework in order to create a cross platform app suited for both iOS and android operating systems</li>
+            <li>Wrote clean comprehensive code using the Dart programming language in order to have a simple, effective, and optimized application using very little code</li>
+            <li><h5 class = "tech-txt">Technoogies:Flutter/Dart/BLOC(State Management)/Moor(Sqlite)</h5></li>
+        </ul>
+            <a href = "https://play.google.com/store?&utm_source=na_Med&utm_medium=hasem&utm_content=Jul0119&utm_campaign=Evergreen&pcampaignid=MKT-DR-na-us-1000189-Med-hasem-py-Evergreen-Jul0119-Text_Search_BKWS-id_100740_%7cEXA%7cONSEM_kwid_43700045371544913&gclid=CjwKCAjwlovtBRBrEiwAG3XJ-85CtD6urrTPZJAjScJageMJEM6Ev-hn5oYy2D-Ee4b9g5F_ncWEExoCq0kQAvD_BwE&gclsrc=aw.ds"
+            target="_blank"><img src = "https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"alt="google play store button"
+            id = "play-store-bnt"></a><span><a href="project1.html" class="btn btn-danger btn-lg" role="button">Learn More</a></span>
+        </div>
+    </div>
+    <br>
+    <div class = 'row'>
+        <div class = "col-md-4">
+            <div class = "img-box">
+                <script>
+                    var ii = 0; 			// Start Point
+        var iimages = [];	// Images Array
+        var timei = 3000;	// Time Between Switch
+             
+        // Image List
+        iimages[0] = "newbook/b3.png";
+        iimages[1] = "newbook/b2.png";
+        iimages[2] = "newbook/b1.png";
+        iimages[3] = "newbook/b4.png";
+        iimages[4] = "newbook/b5.png";
+
+        
+        // Change Image
+        function changeImgi(){
+            document.slidei.src = iimages[ii];
+        
+            // Check If Index Is Under Max
+            if(ii < iimages.length - 1){
+              // Add 1 to Index
+              ii++; 
+            } else { 
+                // Reset Back To O
+                ii = 0;
+            }
+        
+            // Run function every x seconds
+            setTimeout("changeImg()", timei);
+        }
+        
+        // Run function when page loads
+        window.onload=changeImgi;
+                </script>
+                <img name="slidei" width="426" height="856" />
+            </div>
+        </div>
+    <div class = "col-md-8">
+        <img src="Images/booko.png">
+        <br>
+        <h4>BookMate</h4>
+            <p class = "app-description">BookMate | Mobile library app used to help users prevent overdue or lost books
+            </p>
+        <ul class = "project-points">
+            <li>Used Sqlite in order to allow users to save their books locally on their device</li>
+            <li>Utilized the MVVM(Model-View-ViewModel) architecture which allows for easy separation of data, user interface, and business logic</li>
+            <li>Accessed Google Books Api and converted JSON to Java DAO (Data Access Objects) in order to properly display book data to the user</li>
+            <li>Wrote code using the Kotlin programming language in order to create a clean and efficient project that can be easily scaled and modified by future developers if needed</li>
+            <li><h5 class = "tech-txt">Technoogies:Kotlin/Java/Xml/Android Studio/Volley/Google Books Api</h5></li>
+        </ul>
+            <a href = "https://play.google.com/store?&utm_source=na_Med&utm_medium=hasem&utm_content=Jul0119&utm_campaign=Evergreen&pcampaignid=MKT-DR-na-us-1000189-Med-hasem-py-Evergreen-Jul0119-Text_Search_BKWS-id_100740_%7cEXA%7cONSEM_kwid_43700045371544913&gclid=CjwKCAjwlovtBRBrEiwAG3XJ-85CtD6urrTPZJAjScJageMJEM6Ev-hn5oYy2D-Ee4b9g5F_ncWEExoCq0kQAvD_BwE&gclsrc=aw.ds"
+            target="_blank"><img src = "https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"alt="google play store button"
+            id = "play-store-bnt"></a><span><a href="project1.html" class="btn btn-danger btn-lg" role="button">Learn More</a></span>
+        </div>
+    </div>
+    <br>
+    <div class = 'row'>
+        <div class = "col-md-4">
+            <div class = "img-box">
+                <img src='Images/WeatherCast.png'>
+            </div>
+        </div>
+    <div class = "col-md-8">
+        <h4>WeatherCast</h4>
+            <p class = "app-description">MyWeather | Mobile weather app that displays weather forecast for given zip code
+            </p>
+        <ul class = "project-points">
+            <li>Accessed weather Api and converted JSON to Java DAO (Data Access Objects) in order to properly display weather data to the user</li>
+            <li>Wrote code using the Java programming language</li>
+            <li>Used Volley(HTTP client) to consume JSON data from Api</li>
+            <li><h5 class = "tech-txt">Technoogies:Java/Xml/Android Studio/Volley/Open Weather Api</h5></li>
+        </ul>
+            <a href = "https://play.google.com/store?&utm_source=na_Med&utm_medium=hasem&utm_content=Jul0119&utm_campaign=Evergreen&pcampaignid=MKT-DR-na-us-1000189-Med-hasem-py-Evergreen-Jul0119-Text_Search_BKWS-id_100740_%7cEXA%7cONSEM_kwid_43700045371544913&gclid=CjwKCAjwlovtBRBrEiwAG3XJ-85CtD6urrTPZJAjScJageMJEM6Ev-hn5oYy2D-Ee4b9g5F_ncWEExoCq0kQAvD_BwE&gclsrc=aw.ds"
+            target="_blank"><img src = "https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"alt="google play store button"
+            id = "play-store-bnt"></a><span><a href="project1.html" class="btn btn-danger btn-lg" role="button">Learn More</a></span>
+        </div>
+    </div>
+</section>
+
+</div>
+<!--footer-->
+<footer id = "Contact">
+    <h1 class = "footer-title">Get In Touch</h1>
+    <div class = "container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Say Hello!</h2>
+                <ion-icon name="call"class="contact-icon"></ion-icon>
+                    <span>281-222-7134</span>
+                   <h6>Give me a call.</h6> 
+                    <br>
+                    <div>
+               <a href = "mailto:xxx@gmail.com"><ion-icon name="mail" class="contact-icon"></ion-icon></a>
+               <a href="mailto:xxx@gmail.com" class="email-link"><span>kingsleychris64@gmail.com</span></a>
+            </div>
+            <h6 class = "email-note">Send me an Email.</h6>
+        <hr>
+    </div>
+        <div class ="col-md-6">
+            <h5>About Me</h5>
+            <p>I am a software developer, a flutist, and everything in between. When I am not developing applications for my clients, I enjoy playing classical pieces of music</p>
+        <h5>Connect with me.</h5>
+        <a href="https://www.linkedin.com/in/kingsley-uchem-7392b0195?trk=public_profile_samename_profile_profile-result-card_result-card_full-click"
+        target="_blank">
+        <ion-icon name="logo-linkedin"title = "my Linkedin"></ion-icon>
+        </a>
+        <a href="https://github.com/JavaCoffeeBean" target="_blank">
+        <ion-icon name="logo-github"title = "my Githb"></ion-icon>
+                </a>
+                <a href=" https://twitter.com/KingsleyU6?lang=en" target="_blank">
+                <ion-icon name="logo-twitter" title="my Twitter"></ion-icon>
+                </a>
+            </div>  
+        </div>
+    </div>
+</footer><!--end Footer-->
+<script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+<script src = "script.js"></script>
+</body>
+</html>
